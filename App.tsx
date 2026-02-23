@@ -517,7 +517,7 @@ const App: React.FC = () => {
                       <span className="text-slate-900 text-2xl font-light">{PERSONAL_INFO.email}</span>
                     </div>
                   </div>
-                  <div className="flex items-center space-x-8 group/link">
+                  <a href="https://www.linkedin.com/in/yashodhar-parmar-b9b52125a" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-8 group/link">
                     <div className="w-16 h-16 glass-card rounded-2xl flex items-center justify-center group-hover/link:bg-rose-400 transition-all shadow-md border-slate-200">
                       <Linkedin className="text-slate-600 group-hover/link:text-white" size={28} />
                     </div>
@@ -525,7 +525,7 @@ const App: React.FC = () => {
                       <span className="text-xs text-rose-500 uppercase font-bold tracking-[0.3em] mb-1">Connect Network</span>
                       <span className="text-slate-900 text-2xl font-light">LinkedIn Profile</span>
                     </div>
-                  </div>
+                            </a>
                 </div>
               </div>
               
