@@ -290,15 +290,15 @@ const App: React.FC = () => {
       </div>
 
       {/* About Section */}
-      <section id="about" className="min-h-screen py-8 relative flex flex-col justify-center scroll-mt-16">
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <section id="about" className="min-h-screen pt-24 pb-8 relative flex flex-col justify-center">
+        <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
           <SectionTitle 
             title="The Intersection" 
             subtitle="Tech meets Business. Creativity meets Design." 
           />
           
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-            <div className="lg:col-span-7 space-y-4">
+            <div className="lg:col-span-7 space-y-3">
               <div className="glass-card p-6 rounded-[2rem] border-slate-200 reveal">
                 {PERSONAL_STORY.narrative.slice(0, 2).map((paragraph, i) => (
                   <p key={i} className="text-base text-slate-600 leading-relaxed font-light mb-3 last:mb-0">
@@ -309,7 +309,7 @@ const App: React.FC = () => {
               
               <div className="relative group reveal" style={{ transitionDelay: '0.1s' }}>
                 <div className="absolute -inset-1.5 bg-gradient-to-r from-rose-400 via-purple-400 to-orange-300 rounded-[3rem] blur-xl opacity-20 group-hover:opacity-40 transition duration-1000"></div>
-                <div className="relative glass-card p-5 rounded-[1.5rem] bg-[#fdfbf7]/70 border-slate-200">
+                <div className="hidden">
                   <div className="flex items-start space-x-8">
                     <Quote className="text-rose-400 flex-shrink-0 opacity-50" size={56} />
                     <p className="text-lg font-display font-medium text-slate-900 italic leading-snug">
@@ -372,7 +372,7 @@ const App: React.FC = () => {
           style={{ top: `${(scrollProgress * 2) - 50}%` }}
         ></div>
 
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
+        <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
           <SectionTitle title="The Track Record" subtitle="Building AI futures for global enterprises." dark />
           <div className="space-y-6">
             {EXPERIENCES.map((exp, idx) => (
@@ -405,7 +405,7 @@ const App: React.FC = () => {
 
       {/* Projects Section */}
       <section id="projects" className="py-40 relative">
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
+        <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
           <SectionTitle title="Featured" subtitle="Experimental artifacts in Creative AI and Automation." />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 stagger-reveal">
             {PROJECTS.map((proj, idx) => (
@@ -442,7 +442,7 @@ const App: React.FC = () => {
 
       {/* Presentations Section */}
       <section id="presentations" className="py-40 relative">
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
+        <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
           <SectionTitle title="Thought Leadership" subtitle="Speaking engagements on AI psychology and ethics." />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 stagger-reveal">
             {PRESENTATIONS.map((pres, idx) => (
@@ -468,7 +468,7 @@ const App: React.FC = () => {
 
       {/* Skills / Arsenal */}
       <section id="skills" className="py-40 relative bg-slate-50/50">
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
+        <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
           <SectionTitle title="The Arsenal" subtitle="A multidisciplinary tech stack built for ROI." />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 stagger-reveal">
             {[
