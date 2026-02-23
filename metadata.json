@@ -1,0 +1,8 @@
+{
+  "name": "Yashodhar Parmar Portfolio",
+  "description": "A high-end, dynamic portfolio for Yashodhar Parmar, an AI Consultant and Creative Tech expert, featuring an interactive AI assistant powered by Gemini.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
