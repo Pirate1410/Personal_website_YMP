@@ -42,7 +42,7 @@ const useScrollReveal = () => {
 };
 
 const SectionTitle: React.FC<{ title: string; subtitle?: string; dark?: boolean }> = ({ title, subtitle, dark }) => (
-  <div className="mb-16 relative reveal">
+  <div className="mb-6 relative reveal">
     <h2 className={`text-4xl md:text-5xl font-display font-bold mb-4 tracking-tight ${dark ? 'text-white' : 'text-slate-900'}`}>{title}</h2>
     {subtitle && <p className={`max-w-2xl text-lg font-light ${dark ? 'text-slate-300' : 'text-slate-500'}`}>{subtitle}</p>}
     <div className="h-1.5 w-24 bg-gradient-to-r from-rose-400 to-purple-400 mt-6 rounded-full shadow-[0_0_20px_rgba(251,113,133,0.4)]"></div>
@@ -290,18 +290,18 @@ const App: React.FC = () => {
       </div>
 
       {/* About Section */}
-      <section id="about" className="py-40 relative">
+      <section id="about" className="py-12 relative">
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <SectionTitle 
             title="The Intersection" 
             subtitle="Tech meets Business. Creativity meets Design." 
           />
           
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-20 items-start">
-            <div className="lg:col-span-7 space-y-12">
-              <div className="glass-card p-12 rounded-[4rem] border-slate-200 reveal">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            <div className="lg:col-span-7 space-y-4">
+              <div className="glass-card p-6 rounded-[2rem] border-slate-200 reveal">
                 {PERSONAL_STORY.narrative.map((paragraph, i) => (
-                  <p key={i} className="text-xl text-slate-600 leading-relaxed font-light mb-8 last:mb-0">
+                  <p key={i} className="text-base text-slate-600 leading-relaxed font-light mb-3 last:mb-0">
                     {paragraph}
                   </p>
                 ))}
@@ -309,10 +309,10 @@ const App: React.FC = () => {
               
               <div className="relative group reveal" style={{ transitionDelay: '0.1s' }}>
                 <div className="absolute -inset-1.5 bg-gradient-to-r from-rose-400 via-purple-400 to-orange-300 rounded-[3rem] blur-xl opacity-20 group-hover:opacity-40 transition duration-1000"></div>
-                <div className="relative glass-card p-12 rounded-[3rem] bg-[#fdfbf7]/70 border-slate-200">
+                <div className="relative glass-card p-5 rounded-[1.5rem] bg-[#fdfbf7]/70 border-slate-200">
                   <div className="flex items-start space-x-8">
                     <Quote className="text-rose-400 flex-shrink-0 opacity-50" size={56} />
-                    <p className="text-3xl font-display font-medium text-slate-900 italic leading-snug">
+                    <p className="text-lg font-display font-medium text-slate-900 italic leading-snug">
                       "{PERSONAL_INFO.personalMission}"
                     </p>
                   </div>
@@ -320,8 +320,8 @@ const App: React.FC = () => {
               </div>
             </div>
 
-            <div className="lg:col-span-5 space-y-12">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 stagger-reveal">
+            <div className="lg:col-span-5 space-y-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 stagger-reveal">
                 {PERSONAL_STORY.pillars.map((pillar, idx) => (
                   <div key={idx} className="glass-card p-8 rounded-[3rem] hover:bg-slate-50 transition-all duration-500 group border-slate-200">
                     <div className="w-14 h-14 bg-rose-400/10 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 group-hover:bg-rose-400/20 transition-all shadow-inner">
@@ -529,27 +529,6 @@ const App: React.FC = () => {
                 </div>
               </div>
               
-              <div className="glass-card p-12 rounded-[4rem] border-slate-200 relative shadow-xl">
-                <form className="space-y-8" onSubmit={(e) => e.preventDefault()}>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div>
-                      <label className="block text-slate-500 text-xs font-bold uppercase tracking-widest mb-4">Name</label>
-                      <input type="text" className="w-full px-8 py-5 glass-card border-slate-200 rounded-[2rem] focus:ring-2 focus:ring-rose-400 outline-none text-slate-900 transition-all bg-white/50" placeholder="Name" />
-                    </div>
-                    <div>
-                      <label className="block text-slate-500 text-xs font-bold uppercase tracking-widest mb-4">Email</label>
-                      <input type="email" className="w-full px-8 py-5 glass-card border-slate-200 rounded-[2rem] focus:ring-2 focus:ring-rose-400 outline-none text-slate-900 transition-all bg-white/50" placeholder="Email" />
-                    </div>
-                  </div>
-                  <div>
-                    <label className="block text-slate-500 text-xs font-bold uppercase tracking-widest mb-4">Project Intent</label>
-                    <textarea rows={5} className="w-full px-8 py-6 glass-card border-slate-200 rounded-[2.5rem] focus:ring-2 focus:ring-rose-400 outline-none text-slate-900 transition-all bg-white/50 resize-none" placeholder="How can we collaborate?"></textarea>
-                  </div>
-                  <button className="w-full py-6 bg-slate-900 text-white font-bold rounded-[2rem] transition-all hover:bg-slate-800 shadow-[0_10px_20px_rgba(0,0,0,0.1)] hover:-translate-y-1.5 active:translate-y-0 uppercase tracking-widest text-sm">
-                    Initiate Breakthrough
-                  </button>
-                </form>
-              </div>
             </div>
           </div>
         </div>
