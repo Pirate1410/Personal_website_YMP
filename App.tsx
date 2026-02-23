@@ -498,14 +498,16 @@ const App: React.FC = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-40 px-6">
+              <section id="contact" className="min-h-screen py-12 relative overflow-hidden flex flex-col justify-center">
         <div className="max-w-7xl mx-auto relative reveal">
           <div className="absolute -inset-10 bg-rose-400/10 rounded-[6rem] blur-[100px] pointer-events-none"></div>
           <div className="glass-card bg-slate-50/50 rounded-[5rem] p-16 md:p-28 border-slate-200 relative overflow-hidden group">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-6xl md:text-8xl font-display font-bold text-slate-900 mb-10 leading-none tracking-tight">Let's craft <br />the next <span className="text-rose-500">vision.</span></h2>
-                <p className="text-slate-500 text-2xl mb-16 font-light max-w-lg leading-relaxed">Open to high-impact roles and strategic AI partnerships globally.               </div>               <div className="flex flex-col space-y-6 reveal"></p>
+                              <p className="text-slate-500 text-2xl mb-16 font-light max-w-lg leading-relaxed">Open to high-impact roles and strategic AI partnerships globally.</p>
+                            </div>
+                          <div className="flex flex-col justify-center space-y-8 reveal">
                 
                 <div className="space-y-10">
                   <div className="flex items-center space-x-8 group/link">
