@@ -20,6 +20,7 @@ import {
   MessageSquare
 } from 'lucide-react';
 import { PERSONAL_INFO, PERSONAL_STORY, EXPERIENCES, EDUCATION, PROJECTS, PRESENTATIONS, SKILLS } from './constants';
+import profilePhoto from './photo.jpeg';
 
 // Custom hook for scroll-reveal functionality
 const useScrollReveal = () => {
@@ -244,7 +245,7 @@ const App: React.FC = () => {
               <div className="relative z-10 w-[450px] h-[450px] p-6 glass-card rounded-[4rem] shadow-[0_32px_64px_-12px_rgba(0,0,0,0.1)] border-slate-200">
                 <div className="w-full h-full rounded-[3rem] overflow-hidden bg-slate-100 relative group">
                   <img 
-                    src="/photo.jpeg" 
+                    src={profilePhoto} 
                     alt="Yashodhar Parmar" 
                     className="w-full h-full object-cover transition-all duration-1000 ease-out scale-105 group-hover:scale-100"
                   />
