@@ -15,10 +15,10 @@ export const PERSONAL_INFO = {
 
 export const PERSONAL_STORY = {
   narrative: [
-    "My journey bridges the analytical and the artistic. At NIT Surat, I mastered signal processing, but was always fascinated by its business impact and user experience.",
-    "At Deloitte USI, leading XR initiatives for global giants taught me that AI's true potential lies in solving enterprise friction points. This drove my pivot to Generative AI, focusing on intelligent systems that act as partners.",
-    "Now pursuing my Master's at ASU's W.P. Carey School, I orchestrate AI in Business. I approach prompt engineering and RAG pipelines as design challenges—making AI accurate for the CFO, yet intuitive for creatives.",
-    "Whether architecting strategy at London Tech Week or directing production at Zoom Innovation Labs, I remain fluent in both code and commerce."
+"I am Yashodhar Parmar, an AI Consultant and AI Business Strategist who transforms emerging technologies into scalable business solutions.",
+      "From leading XR and GenAI product initiatives at Deloitte to building agentic AI systems and analytics dashboards for public-sector clients like the City of Scottsdale, I specialize in bridging business objectives with technical execution.",
+      "With experience spanning AI workflows, LLM systems, enterprise automation, and user-centered design, I bring a structured, data-driven, and outcome-focused approach to innovation.",
+      "My Motto: People show trust in me and I deliver!"
   ],
   quickFacts: [
     { label: "Obsession", value: "GenAI and Ethical AI Strategy" },
