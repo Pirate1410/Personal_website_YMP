@@ -300,11 +300,14 @@ const App: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-20 items-start">
             <div className="lg:col-span-7 space-y-12">
               <div className="glass-card p-12 rounded-[4rem] border-slate-200 reveal">
-                {PERSONAL_STORY.narrative.map((paragraph, i) => (
-                  <p key={i} className="text-xl text-slate-600 leading-relaxed font-light mb-8 last:mb-0">
-                    {paragraph}
-                  </p>
-                ))}
+{PERSONAL_STORY.narrative.map((paragraph, i) => {
+              const boldedText = paragraph
+                .replace('Yashodhar Parmar', '<strong>Yashodhar Parmar</strong>')
+                .replace('My Motto: People show trust in me and I deliver!', '<strong>My Motto: People show trust in me and I deliver!</strong>');
+              return (
+                <p key={i} className="text-xl text-slate-600 leading-relaxed font-light mb-8 last:mb-0 text-justify" dangerouslySetInnerHTML={{ __html: boldedText }} />
+              );
+            })}
               </div>
               
               <div className="relative group reveal" style={{ transitionDelay: '0.1s' }}>
