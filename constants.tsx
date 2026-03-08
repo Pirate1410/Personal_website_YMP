@@ -15,10 +15,10 @@ export const PERSONAL_INFO = {
 
 export const PERSONAL_STORY = {
   narrative: [
-"I am Yashodhar Parmar, an AI Consultant and AI Business Strategist who transforms emerging technologies into scalable business solutions.",
-      "From leading XR and GenAI product initiatives at Deloitte to building agentic AI systems and analytics dashboards for public-sector clients like the City of Scottsdale, I specialize in bridging business objectives with technical execution.",
-      "With experience spanning AI workflows, LLM systems, enterprise automation, and user-centered design, I bring a structured, data-driven, and outcome-focused approach to innovation.",
-      "My Motto: People show trust in me and I deliver!"
+    "I am Yashodhar Parmar, an AI Consultant and AI Business Strategist who transforms emerging technologies into scalable business solutions.",
+    "From leading XR and GenAI product initiatives at Deloitte to building agentic AI systems and analytics dashboards for public-sector clients like the City of Scottsdale, I specialize in bridging business objectives with technical execution.",
+    "With experience spanning AI workflows, LLM systems, enterprise automation, and user-centered design, I bring a structured, data-driven, and outcome-focused approach to innovation.",
+    "My Motto: People show trust in me and I deliver!"
   ],
   quickFacts: [
     { label: "Obsession", value: "GenAI and Ethical AI Strategy" },
@@ -134,12 +134,14 @@ export const PRESENTATIONS = [
   {
     title: "Why Fear AI",
     description: "Presentation on why we fear AI, psychology behind it, how it started and how can we mitigate the risks and reduce the fear of AI.",
-    videoUrl: "https://drive.google.com/file/d/1K5V0b64Eb3oPDMTVyYbVgTIuQ0DlQ4z3/view?usp=drive_link"
+    videoUrl: "https://drive.google.com/file/d/1K5V0b64Eb3oPDMTVyYbVgTIuQ0DlQ4z3/preview",
+    thumbnailUrl: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1932&auto=format&fit=crop"
   },
   {
     title: "The AI Mischief",
     description: "Presentation on how people use AI for wrong deeds and psychology behind it. What are the common risks that we should be aware of, and how to avoid them.",
-    videoUrl: "https://drive.google.com/file/d/1vy7Zf7RpTV1UhpHgF9jVtp93J_EDN1Ez/view?usp=drive_link"
+    videoUrl: "https://drive.google.com/file/d/1vy7Zf7RpTV1UhpHgF9jVtp93J_EDN1Ez/preview",
+    thumbnailUrl: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop"
   }
 ];
 
